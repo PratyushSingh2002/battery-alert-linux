@@ -1,0 +1,10 @@
+[Unit]
+Description=Battery Charging Alert Service
+
+[Service]
+ExecStart=%h/.local/bin/battery_alert.sh
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=default.target
